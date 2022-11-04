@@ -1,12 +1,8 @@
 plugins:
   - jekyll-seo-tag
-  
-collections:
-  work:
-    output: true
 
 social:
-  name: Project Name
+  name: Machines Don't Get The Jokes
   links:
     - https://www.facebook.com/*link*
     - http://instagram.com/*link*

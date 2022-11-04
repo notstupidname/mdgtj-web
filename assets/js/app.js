@@ -37,3 +37,38 @@ window.addEventListener('load', function() {
     body.classList.remove('is-loading');
     body.classList.remove('transition');
 });
+
+const form = document.querySelector('#form');
+const container = document.querySelector('#container');
+
+form.addEventListener('submit', function(e) {
+    e.preventDefault();
+    const url = 'http://orc2.notstupid.name:6969/create';
+
+    let text = this.elements["text"].value;
+    text = text.replaceAll("\n", "");
+    // console.log(text);
+
+    const payload = {
+        title: 'Test title',
+        text: text
+    }
+
+    const options = {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(payload)
+    }
+
+    fetch(url, options)
+    .then((response) => {
+        if (!response.ok) {
+          throw new Error(`HTTP error: ${response.status}`);
+        }
+        return response.text();
+      })
+      .then((text) => container.innerHTML = text)
+      .catch((error) => console.log(`Could not fetch: ${error}`));
+});
