@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000">
+    <title>notstupid name</title>
+    <style>
+        text {font-family: Arial, Helvetica, sans-serif;font-size: 400px;fill: #000;}
+        rect {fill: #fff;}
+        @media (prefers-color-scheme: dark) {text {fill: #fff;}rect {fill: #000;}}
+    </style>
+    <rect width="1000" height="1000" rx="50" ry="50"/>
+    <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle">!stpd</text>
+</svg>

@@ -1,0 +1,25 @@
+plugins:
+  - jekyll-seo-tag
+  
+collections:
+  work:
+    output: true
+
+social:
+  name: Project Name
+  links:
+    - https://www.facebook.com/*link*
+    - http://instagram.com/*link*
+
+logo: /icon-512.png
+url: https://URL.HERE
+
+title: "*TITLE*"
+lang: "en_US"
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      image: /icon-512.png
